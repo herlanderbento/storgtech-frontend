@@ -1,15 +1,10 @@
 import { useContext, useEffect } from 'react'
-import {
-  Nav,
-  Navbar,
-  NavbarBrand,
-  NavbarText,
-  NavItem,
-  NavLink,
-} from 'reactstrap'
+import { NavbarBrand, NavbarText, NavItem } from 'reactstrap'
 import { NavContext } from '../../contexts/NavContext'
 import { headerSticky } from '../../utils/headerSticky'
-import { HeaderContainer } from './Header.styles'
+import { HeaderContainer, Nav, Navbar, NavLink } from './Header.styles'
+
+import logo from './../../assets/logoazul.png'
 
 function Header() {
   const { activeLinkId } = useContext(NavContext)
@@ -29,7 +24,7 @@ function Header() {
       ?.scrollIntoView({ behavior: 'smooth' })
   }
 
-  function renderNavLink(content: string) {
+  function renderNavLink(content: string, counter: number) {
     const scrollToId = `${content.toLowerCase()}Section`
 
     const handleClickNav = () => {
@@ -39,25 +34,28 @@ function Header() {
     }
 
     return (
-      <Nav navbar key={content}>
-        <NavItem>
-          <NavLink
-            onClick={handleClickNav}
-            className={activeLinkId === content ? 'active' : ''}
-          >
-            {content}
-          </NavLink>
-        </NavItem>
-      </Nav>
+      <NavItem key={content}>
+        <NavLink
+          onClick={handleClickNav}
+          className={activeLinkId === content ? 'active' : ''}
+        >
+          <span>{String(counter + 1).padStart(2, '0')}</span>
+          <a> {content}</a>
+        </NavLink>
+      </NavItem>
     )
   }
 
   return (
     <HeaderContainer>
-      <div className={'container-fluid'}>
+      <div className={'container'}>
         <Navbar>
-          <NavbarBrand onClick={handleClickLogo}>Smooth-scrolling</NavbarBrand>
-          {navLinks.map((nav) => renderNavLink(nav))}
+          <NavbarBrand onClick={handleClickLogo}>
+            <img src={logo} alt="logo" />
+          </NavbarBrand>
+          <Nav className="me-auto">
+            {navLinks.map((nav, count) => renderNavLink(nav, count))}
+          </Nav>
           <NavbarText>Simple Text</NavbarText>
         </Navbar>
       </div>

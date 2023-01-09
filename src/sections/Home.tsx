@@ -4,7 +4,7 @@ function Home() {
   const homeRef = useNav('Home')
 
   return (
-    <section ref={homeRef} className="secondary-section" id="homeSection">
+    <section ref={homeRef} id="homeSection">
       <h2>Home</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic optio

@@ -1,5 +1,5 @@
-import { Button } from '../components/Button'
-import { useNav } from '../hooks/useNav'
+import { Button } from '../../components/Button'
+import { useNav } from '../../hooks/useNav'
 import { HomeSection } from './Home.styles'
 
 import { ArrowDown, ArrowUpRight } from 'phosphor-react'

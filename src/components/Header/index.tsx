@@ -10,7 +10,7 @@ import logo from './../../assets/logoazul.png'
 function Header() {
   const { activeLinkId } = useContext(NavContext)
 
-  const navLinks = ['Home', 'About', 'Services', 'Projects', 'Team', 'News']
+  const navLinks = ['Home', 'About Us', 'Services', 'Projects', 'Team', 'News']
 
   useEffect(() => {
     window.addEventListener('scroll', headerSticky)
@@ -32,7 +32,7 @@ function Header() {
   }
 
   function renderNavLink(content: string, counter: number) {
-    const scrollToId = `${content.toLowerCase()}Section`
+    const scrollToId = `${content.toLowerCase().replace(/\s/g, '')}Section`
 
     const handleClickNav = () => {
       document

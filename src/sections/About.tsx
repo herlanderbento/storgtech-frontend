@@ -1,10 +1,10 @@
 import { useNav } from '../hooks/useNav'
 
 function About() {
-  const aboutRef = useNav('About')
+  const aboutRef = useNav('About Us')
 
   return (
-    <section ref={aboutRef} id="aboutSection">
+    <section ref={aboutRef} id="aboutusSection">
       <h2>About</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic optio

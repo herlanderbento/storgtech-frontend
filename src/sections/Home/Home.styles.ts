@@ -2,7 +2,11 @@ import styled from 'styled-components'
 
 export const HomeSection = styled.section`
   width: 100%;
-  height: 140vh;
+  height: 120vh;
+
+  @media screen and (min-width: 1440px) {
+    height: 140vh;
+  }
 
   padding-top: 12rem;
 
@@ -27,22 +31,32 @@ export const HomeSection = styled.section`
       color: ${(props) => props.theme['dark-default']};
       line-height: 1.5;
 
-      padding-left: 14rem;
-
       span {
         color: ${(props) => props.theme['green-500']};
+      }
+
+      @media screen and (min-width: 1280px) {
+        padding-left: 9rem;
+      }
+
+      @media screen and (min-width: 1440px) {
+        padding-left: 14rem;
       }
     }
 
     img {
       position: absolute;
-      width: 1000px;
       height: 485px;
       left: -120px;
+      width: 54rem;
 
       object-fit: cover;
 
       border-radius: 0px 0.75rem 0.75rem 0px;
+
+      @media screen and (min-width: 1440px) {
+        width: 62.5rem;
+      }
     }
 
     .ellipse__btn {
@@ -81,13 +95,17 @@ export const HomeSection = styled.section`
     }
 
     &__items {
-      margin-left: 4.25rem;
       padding: 1rem 0;
+      margin-left: 1.5rem;
 
       border-bottom: 1px solid ${(props) => props.theme['gray-100']};
 
       &:last-child {
         border-bottom: 0;
+      }
+
+      @media screen and (min-width: 1440px) {
+        margin-left: 4.25rem;
       }
 
       h4 {

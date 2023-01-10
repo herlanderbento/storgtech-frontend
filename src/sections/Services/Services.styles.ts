@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
 export const OurServicesContainer = styled.section`
-  padding: 60px 15px;
+  padding: 60px 15px 40px;
 
   width: 100%;
-  height: 100vh;
+  max-height: 100vh;
 
   .mb__40 {
     margin-bottom: 30px !important;

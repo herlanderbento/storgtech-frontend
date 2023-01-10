@@ -4,7 +4,13 @@ export const AboutUsSection = styled.section`
   padding: 70px 15px;
 
   width: 100%;
-  height: 142vh;
+  min-height: 100vh;
+
+  /* @media screen and (max-width: 1280px) {
+    height: 100vh;
+  } */
+
+  /* background-color: red; */
 
   position: relative;
 
@@ -68,7 +74,15 @@ export const AboutUsSection = styled.section`
   }
 
   .about__us__section__right {
-    padding-top: 4.75rem;
+    padding-top: 3rem;
+
+    .about__us__single__Wrapper img {
+      width: 100%;
+      object-fit: cover;
+      height: 560px;
+
+      border-radius: 0.25rem;
+    }
 
     .about__us__single__Wrapper__01 {
       img {

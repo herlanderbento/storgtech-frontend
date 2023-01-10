@@ -1,7 +1,8 @@
 import { useContext, useEffect } from 'react'
-import { NavbarBrand, NavbarText, NavItem } from 'reactstrap'
+import { NavbarBrand, NavItem } from 'reactstrap'
 import { NavContext } from '../../contexts/NavContext'
 import { headerSticky } from '../../utils/headerSticky'
+import { Button } from '../Button'
 import { HeaderContainer, Nav, Navbar, NavLink } from './Header.styles'
 
 import logo from './../../assets/logoazul.png'
@@ -21,6 +22,12 @@ function Header() {
   function handleClickLogo() {
     document
       .getElementById('homeSection')
+      ?.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  function handleClickContactUs() {
+    document
+      .getElementById('contactsSection')
       ?.scrollIntoView({ behavior: 'smooth' })
   }
 
@@ -56,7 +63,9 @@ function Header() {
           <Nav className="me-auto">
             {navLinks.map((nav, count) => renderNavLink(nav, count))}
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
+          <Button onClick={handleClickContactUs} variant="primary">
+            Contact Us
+          </Button>
         </Navbar>
       </div>
     </HeaderContainer>

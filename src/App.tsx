@@ -12,6 +12,7 @@ import Services from './sections/Services'
 import Team from './sections/Team'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Contacts from './sections/Contacts'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Projects />
         <Team />
         <News />
+        <Contacts />
       </NavProvider>
     </ThemeProvider>
   )

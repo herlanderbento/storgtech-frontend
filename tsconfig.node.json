@@ -3,7 +3,32 @@
     "composite": true,
     "module": "ESNext",
     "moduleResolution": "Node",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "rootDir": "./",
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "typeRoots": [
+      "./src/app/@types",
+      "./node_modules/@types"
+    ],
+    "paths": {
+      "@components/*": [
+        "components/*"
+      ],
+      "@context/*": [
+        "contexts/*"
+      ],
+      "@hooks/*": [
+        "hooks/*"
+      ],
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ],
+      
+    },
   },
   "include": ["vite.config.ts"]
 }

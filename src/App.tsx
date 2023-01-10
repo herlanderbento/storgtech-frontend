@@ -5,7 +5,6 @@ import { defaultTheme } from './styles/themes/default'
 import Header from './components/Header'
 import NavProvider from './contexts/NavContext'
 import Home from './sections/Home'
-import About from './sections/About'
 import News from './sections/News'
 import Projects from './sections/Projects'
 import Services from './sections/Services'
@@ -13,6 +12,7 @@ import Team from './sections/Team'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Contacts from './sections/Contacts'
+import AboutUS from './sections/AboutUs'
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
       <NavProvider>
         <Header />
         <Home />
-        <About />
+        <AboutUS />
         <Services />
         <Projects />
         <Team />

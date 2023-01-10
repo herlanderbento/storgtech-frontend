@@ -71,7 +71,7 @@ function Home() {
         <div className="row pt__86">
           <div className="col-lg-8">
             <div className="home__section__left">
-              <img src="/background-hero.png" alt="" />
+              <img src="/images/background-hero.png" alt="" />
             </div>
           </div>
           <div className="col-lg-4">

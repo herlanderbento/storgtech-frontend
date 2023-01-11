@@ -1,5 +1,5 @@
 import { useNav } from '../../hooks/useNav'
-import { AboutUsSection } from './about-us.styles'
+import { AboutUsSection } from './About-us.styles'
 
 import {
   ArrowRight,

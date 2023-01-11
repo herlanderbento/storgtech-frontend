@@ -1,5 +1,5 @@
 import Slider from 'react-slick'
-import { ClientesAndCollaboratorsSection } from './clients-and-collaborators.styles'
+import { ClientesAndCollaboratorsSection } from './Clients-and-collaborators.styles'
 
 export function ClientesAndCollaborators() {
   const settings = {

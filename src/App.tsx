@@ -7,11 +7,11 @@ import NavProvider from './contexts/NavContext'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import { Home } from './sections/home'
+import { Home } from './sections/Home'
 import { AboutUS } from './sections/about-us'
-import { Services } from './sections/services'
-import { Projects } from './sections/projects'
-import { ClientesAndCollaborators } from './sections/clients-and-collaborators'
+import { Services } from './sections/Services'
+import { Projects } from './sections/Projects'
+import { ClientesAndCollaborators } from './sections/Clients-and-collaborators'
 
 import News from './sections/News'
 import Team from './sections/Team'

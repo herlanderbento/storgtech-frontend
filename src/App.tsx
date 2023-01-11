@@ -8,10 +8,10 @@ import NavProvider from './contexts/NavContext'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import { Home } from './sections/Home'
-import { AboutUS } from './sections/about-us'
+import { AboutUS } from './sections/AboutUs'
 import { Services } from './sections/Services'
 import { Projects } from './sections/Projects'
-import { ClientesAndCollaborators } from './sections/Clients-and-collaborators'
+import { ClientesAndCollaborators } from './sections/ClientsAndCollaborators'
 
 import News from './sections/News'
 import Team from './sections/Team'

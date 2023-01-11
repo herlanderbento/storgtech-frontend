@@ -13,9 +13,8 @@ import { Services } from './sections/Services'
 import { Projects } from './sections/Projects'
 import { ClientesAndCollaborators } from './sections/ClientsAndCollaborators'
 
-import News from './sections/News'
-import Team from './sections/Team'
 import Contacts from './sections/Contacts'
+import { Blog } from './sections/Blog'
 
 function App() {
   return (
@@ -28,8 +27,7 @@ function App() {
         <Services />
         <Projects />
         <ClientesAndCollaborators />
-        <Team />
-        <News />
+        <Blog />
         <Contacts />
       </NavProvider>
     </ThemeProvider>

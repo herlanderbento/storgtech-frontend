@@ -5,15 +5,14 @@ export const ProjectsSection = styled.section`
   padding: 40px 15px 30px;
 
   width: 100%;
-  min-height: 120vh;
+  height: 100vh;
   background-color: ${(props) => props.theme['blue-700']};
 
   /* background: url(/images/icons/background-about-us.png) no-repeat; */
 
-  /* 
-  @media screen and (min-width: 1280px) {
-    height: 100vh;
-  } */
+  @media screen and (min-width: 1440px) {
+    height: 120vh;
+  }
 
   .mt__60 {
     margin-top: 60px;

@@ -10,7 +10,7 @@ import logo from './../../assets/logoazul.png'
 function Header() {
   const { activeLinkId } = useContext(NavContext)
 
-  const navLinks = ['Home', 'About Us', 'Services', 'Projects', 'Team', 'News']
+  const navLinks = ['Home', 'About Us', 'Services', 'Projects', 'Blog']
 
   useEffect(() => {
     window.addEventListener('scroll', headerSticky)

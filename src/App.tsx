@@ -4,16 +4,18 @@ import { defaultTheme } from './styles/themes/default'
 
 import Header from './components/Header'
 import NavProvider from './contexts/NavContext'
-import News from './sections/News'
-import Services from './sections/services'
-import Team from './sections/Team'
-import Contacts from './sections/Contacts'
-import AboutUS from './sections/about-us'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
+
+import { Home } from './sections/home'
+import { AboutUS } from './sections/about-us'
+import { Services } from './sections/services'
+import { Projects } from './sections/projects'
 import { ClientesAndCollaborators } from './sections/clients-and-collaborators'
-import Home from './sections/home'
-import Projects from './sections/projects'
+
+import News from './sections/News'
+import Team from './sections/Team'
+import Contacts from './sections/Contacts'
 
 function App() {
   return (

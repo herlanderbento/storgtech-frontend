@@ -6,7 +6,7 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
-function Projects() {
+export function Projects() {
   const projectsRef = useNav('Projects')
 
   const settings = {
@@ -63,5 +63,3 @@ function Projects() {
     </ProjectsSection>
   )
 }
-
-export default Projects

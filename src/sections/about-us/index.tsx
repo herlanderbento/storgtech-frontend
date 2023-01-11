@@ -9,7 +9,7 @@ import {
   Rocket,
 } from 'phosphor-react'
 
-function AboutUS() {
+export function AboutUS() {
   const aboutUsRef = useNav('About Us')
 
   function handleClickServices() {
@@ -127,5 +127,3 @@ function AboutUS() {
     </AboutUsSection>
   )
 }
-
-export default AboutUS

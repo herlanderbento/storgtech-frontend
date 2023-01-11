@@ -9,7 +9,7 @@ import {
   Graph,
 } from 'phosphor-react'
 
-function Services() {
+export function Services() {
   const servicesRef = useNav('Services')
 
   return (
@@ -97,5 +97,3 @@ function Services() {
     </OurServicesContainer>
   )
 }
-
-export default Services

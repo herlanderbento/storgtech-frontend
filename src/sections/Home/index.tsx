@@ -4,7 +4,7 @@ import { useNav } from '../../hooks/useNav'
 import { ArrowDown, ArrowUpRight } from 'phosphor-react'
 import { HomeSection } from './home.styles'
 
-function Home() {
+export function Home() {
   const homeRef = useNav('Home')
 
   const infoSectionRightItens = [
@@ -92,5 +92,3 @@ function Home() {
     </HomeSection>
   )
 }
-
-export default Home

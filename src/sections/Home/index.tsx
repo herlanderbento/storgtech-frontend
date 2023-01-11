@@ -1,8 +1,8 @@
 import { Button } from '../../components/Button'
 import { useNav } from '../../hooks/useNav'
-import { HomeSection } from './Home.styles'
 
 import { ArrowDown, ArrowUpRight } from 'phosphor-react'
+import { HomeSection } from './home.styles'
 
 function Home() {
   const homeRef = useNav('Home')

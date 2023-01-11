@@ -1,6 +1,5 @@
 import { useNav } from '../../hooks/useNav'
-import { ProjectsSection } from './Projects.styles'
-
+import { ProjectsSection } from './projects.styles'
 import Slider from 'react-slick'
 
 import 'slick-carousel/slick/slick.css'
@@ -32,7 +31,7 @@ function Projects() {
           </div>
         </div>
 
-        <Slider className="mt__20" {...settings}>
+        <Slider className="mt__60" {...settings}>
           {Array.apply(0, Array(10)).map(function (_, key) {
             return (
               <div key={key} className="project__content__items">

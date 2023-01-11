@@ -15,7 +15,7 @@ export const ProjectsSection = styled.section`
     height: 100vh;
   } */
 
-  .mt__20 {
+  .mt__60 {
     margin-top: 60px;
   }
 

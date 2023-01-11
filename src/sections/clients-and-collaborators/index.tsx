@@ -29,7 +29,7 @@ export function ClientesAndCollaborators() {
         </div>
 
         <Slider className="mt__40" {...settings}>
-          {Array.apply(0, Array(10)).map(function (_, key) {
+          {Array.apply(0, Array(16)).map(function (_, key) {
             return (
               <div key={key} className="clients__and__collaborators__items">
                 <img

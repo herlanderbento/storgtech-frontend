@@ -1,5 +1,6 @@
 import { useNav } from '../../hooks/useNav'
 import { ProjectsSection } from './projects.styles'
+
 import Slider from 'react-slick'
 
 import 'slick-carousel/slick/slick.css'

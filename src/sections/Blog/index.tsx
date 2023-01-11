@@ -26,7 +26,7 @@ export function Blog() {
             </div>
           </div>
         </div>
-        <div className="row mt__25">
+        <div className="row align-items-stretch mt__25">
           {images.map(function (content, key) {
             return (
               <div key={key} className="col-lg-4">
@@ -35,7 +35,8 @@ export function Blog() {
 
                   <div className="blog__items__description">
                     <label className="blog__items__date">
-                      <Calendar color="#2BD0C9" size={18} /> {'   '} 2020/08/13
+                      <Calendar color="#2BD0C9" size={18} /> {'   '} On May
+                      14,2021
                     </label>
                     <h3 className="blog__items__titles">
                       Benefits of Async/Await

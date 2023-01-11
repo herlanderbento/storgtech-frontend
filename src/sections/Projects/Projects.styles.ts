@@ -64,6 +64,11 @@ export const ProjectsSection = styled.section`
   .project__content__items {
     width: 267px;
     height: 307px;
+
+    img {
+      height: 307px !important;
+      object-fit: cover;
+    }
   }
 
   .project__content__items__imghvr {

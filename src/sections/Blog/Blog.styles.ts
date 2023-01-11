@@ -55,7 +55,7 @@ export const BlogSection = styled.section`
       font-weight: 700;
       font-size: 0.875rem;
 
-      width: 130px;
+      width: 160px;
       height: 33px;
 
       background-color: ${(props) => props.theme['white-500']};
@@ -105,6 +105,6 @@ export const BlogSection = styled.section`
 
   .button__see__more {
     margin-top: 1.375rem;
-    padding: 1rem 1.75rem !important;
+    padding: 1rem 2rem !important;
   }
 `

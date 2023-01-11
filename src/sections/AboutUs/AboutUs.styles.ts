@@ -1,16 +1,13 @@
 import styled from 'styled-components'
 
 export const AboutUsSection = styled.section`
-  padding: 70px 15px;
-
+  padding: 70px 15px 0;
   width: 100%;
-  min-height: 100vh;
+  min-height: 120vh;
 
-  /* @media screen and (max-width: 1280px) {
+  /* @media screen and (max-width: 1440px) {
     height: 100vh;
   } */
-
-  /* background-color: red; */
 
   position: relative;
 
@@ -78,7 +75,7 @@ export const AboutUsSection = styled.section`
 
     .about__us__single__Wrapper img {
       width: 100%;
-      object-fit: cover;
+      object-fit: contain;
       height: 560px;
 
       border-radius: 0.25rem;

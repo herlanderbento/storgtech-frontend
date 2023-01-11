@@ -9,10 +9,10 @@ import News from './sections/News'
 import Projects from './sections/Projects'
 import Services from './sections/Services'
 import Team from './sections/Team'
-
-import 'bootstrap/dist/css/bootstrap.min.css'
 import Contacts from './sections/Contacts'
 import AboutUS from './sections/AboutUs'
+
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (

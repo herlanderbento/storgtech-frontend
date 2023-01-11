@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const OurServicesContainer = styled.section`
-  padding: 60px 15px 40px;
+  padding: 60px 15px;
 
   width: 100%;
   max-height: 100vh;

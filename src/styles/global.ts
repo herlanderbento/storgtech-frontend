@@ -25,4 +25,8 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 1rem;
     }
 
+    section{
+        /* height: 120vh; */
+    }
+
 `

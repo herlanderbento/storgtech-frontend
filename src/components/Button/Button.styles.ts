@@ -2,13 +2,13 @@ import styled from 'styled-components'
 
 export type ButtonVariant = 'primary' | 'secondary'
 
-interface ButtonContainerProps {
-  variant: ButtonVariant
-}
+const BTN_COLORS = {
+  primary: 'green-500',
+  secondary: 'blue-700',
+} as const
 
-const buttonVariants = {
-  primary: '#2BD0C9',
-  secondary: '#263C57',
+interface ButtonContainerProps {
+  variant: keyof typeof BTN_COLORS
 }
 
 export const ButtonContainer = styled.button<ButtonContainerProps>`
@@ -23,10 +23,6 @@ export const ButtonContainer = styled.button<ButtonContainerProps>`
   border: 0;
   border-radius: 0.25rem;
 
-  ${(props) => {
-    return `background-color: ${buttonVariants[props.variant]};   color: ${
-      props.theme['white-default']
-    }
-      `
-  }};
+  background-color: ${(props) => props.theme[BTN_COLORS[props.variant]]};
+  color: ${(props) => props.theme['white-default']};
 `

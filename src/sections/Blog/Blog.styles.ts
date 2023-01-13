@@ -72,7 +72,7 @@ export const BlogSection = styled.section`
 
     .blog__items__titles {
       font-weight: 700;
-      font-size: 1.5;
+      font-size: 1.5rem;
 
       color: ${(props) => props.theme['dark-default']};
       margin-top: 0.875rem;

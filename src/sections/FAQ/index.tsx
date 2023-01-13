@@ -1,5 +1,5 @@
 import { Children } from 'react'
-import { AccordionBody, AccordionHeader, AccordionItem } from 'reactstrap'
+import { AccordionBody, AccordionHeader } from 'reactstrap'
 import {
   AccordionItemCustom,
   FAQSection,

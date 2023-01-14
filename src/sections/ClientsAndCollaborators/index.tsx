@@ -24,11 +24,11 @@ export function ClientesAndCollaborators() {
           <div className="col-lg-12">
             <div className="clients__and__collaborators__header">
               <h3 className="clients__and__collaborators__title">
-                04.1 • Our Clients and Collaborators
+                04.1 • Os nossos Clientes e Colaboradores
               </h3>
 
               <h2 className="clients__and__collaborators__subtitle">
-                Get to know our <br /> clients and collaborators
+                Conheça os nossos <br /> clientes e colaboradores
               </h2>
             </div>
           </div>

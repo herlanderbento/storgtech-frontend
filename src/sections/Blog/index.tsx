@@ -18,11 +18,9 @@ export function Blog() {
         <div className="row">
           <div className="col-lg-12">
             <div className="blog__section__header">
-              <h3 className="blog__title">05 • Our Blog</h3>
+              <h3 className="blog__title">05 • Nosso Blog</h3>
 
-              <h2 className="blog__subtitle">
-                Take a look at the latest <br /> news highlights
-              </h2>
+              <h2 className="blog__subtitle">Ver o nosso Blog mais recente</h2>
             </div>
           </div>
         </div>
@@ -35,20 +33,20 @@ export function Blog() {
 
                   <div className="blog__items__description">
                     <label className="blog__items__date">
-                      <Calendar color="#2BD0C9" size={18} /> {'   '} On May
+                      <Calendar color="#2BD0C9" size={18} /> {'   '} Em Maio
                       14,2021
                     </label>
                     <h3 className="blog__items__titles">
-                      Benefits of Async/Await
+                      Vantagens da Async/Await
                     </h3>
                     <p className="blog__items__paragraph">
-                      Use our built-in analytics Use our built-in analytics
-                      dashboard Use our built-in anal ytics dashboard to pull
-                      valuable ins.{' '}
+                      Utilize a nossa análise integrada Utilize a nossa análise
+                      integrada painel de instrumentos Use o nosso painel de
+                      instrumentos anal ytics embutido para puxar valioso ins.{' '}
                     </p>
 
                     <button className="blog__btn__see__more">
-                      See more <ArrowRight color="#2BD0C9" size={24} />
+                      Ver mais <ArrowRight color="#2BD0C9" size={24} />
                     </button>
                   </div>
                 </div>
@@ -58,7 +56,7 @@ export function Blog() {
         </div>
         <div className="blog__cta">
           <Button className="button__see__more" variant="secondary">
-            See more <ArrowRight color="#FFFFFF" size={20} />
+            Ver mais <ArrowRight color="#FFFFFF" size={20} />
           </Button>
         </div>
       </div>

@@ -35,9 +35,9 @@ export function Projects() {
         <div className="row justify-content-between align-items-center">
           <div className="col-lg-10">
             <div className="projects__section__left">
-              <h3 className="projects__title">04 • Our Projects</h3>
+              <h3 className="projects__title">04 • Nossos Projectos</h3>
               <h2 className="projects__subtitle">
-                Explore our recent projects
+                Explore os nossos projectos <br /> recentes
               </h2>
             </div>
           </div>

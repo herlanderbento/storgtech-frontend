@@ -1,7 +1,10 @@
 import Slider from 'react-slick'
+import { useNav } from '../../hooks/useNav'
 import { ClientesAndCollaboratorsSection } from './ClientsAndCollaborators.styles'
 
 export function ClientesAndCollaborators() {
+  const clientsAndCollaboratorsRef = useNav('clients__and__collaborators')
+
   const settings = {
     centerMode: true,
     infinite: true,
@@ -12,7 +15,10 @@ export function ClientesAndCollaborators() {
   }
 
   return (
-    <ClientesAndCollaboratorsSection>
+    <ClientesAndCollaboratorsSection
+      ref={clientsAndCollaboratorsRef}
+      id="clients__and__collaborators__section"
+    >
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

@@ -4,7 +4,11 @@ export const BlogSection = styled.section`
   background-color: ${(props) => props.theme['white-500']};
   padding: 80px 15px;
 
-  height: 140vh;
+  height: 130vh;
+
+  @media screen and (min-width: 1440px) {
+    height: 140vh;
+  }
 
   .blog__header {
     padding-top: 1rem;

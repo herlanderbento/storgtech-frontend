@@ -15,6 +15,7 @@ import { ClientesAndCollaborators } from './sections/ClientsAndCollaborators'
 import { Contacts } from './sections/Contacts'
 import { Blog } from './sections/Blog'
 import { FAQ } from './sections/FAQ'
+import { Footer } from './components/Footer'
 // import { NewsLetter } from './sections/NewsLetter'
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <FAQ />
         {/* <NewsLetter /> */}
         <Contacts />
+        <Footer />
       </NavProvider>
     </ThemeProvider>
   )

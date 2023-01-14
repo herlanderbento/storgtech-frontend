@@ -5,7 +5,7 @@ import { AccordionItem, UncontrolledAccordion } from 'reactstrap'
 export const FAQSection = styled.section`
   padding: 80px 15px;
 
-  height: 90vh;
+  height: 74vh;
 
   .faq__header {
   }

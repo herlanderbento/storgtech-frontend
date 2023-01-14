@@ -1,5 +1,6 @@
 import { Children } from 'react'
 import { AccordionBody, AccordionHeader } from 'reactstrap'
+import { useNav } from '../../hooks/useNav'
 import {
   AccordionItemCustom,
   FAQSection,
@@ -7,6 +8,8 @@ import {
 } from './Faq.styles'
 
 export function FAQ() {
+  const faqRef = useNav('faq')
+
   const arrayInfo = [
     'What is StorgTech?',
     'What sector does the company operate in?',
@@ -15,7 +18,7 @@ export function FAQ() {
   ]
 
   return (
-    <FAQSection>
+    <FAQSection ref={faqRef} id="faq__section">
       <div className="container">
         <div className="row align-items-center justify-content-between">
           <div className="col-lg-5">

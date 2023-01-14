@@ -21,13 +21,8 @@ export function Contacts() {
                   <h3 className="contacts__title">07 • Contacts</h3>
 
                   <h2 className="contacts__subtitle">
-                    Let’s Discuss Your Project
+                    Get In Tuch With Us With Any Questions
                   </h2>
-                  <p className="contacts__description">
-                    We give the best sed ut perspiciatis unde omnis iste natus
-                    error sit voluptatem accusantium doloremque laudantium,
-                    totam rem aperiam
-                  </p>
                 </div>
               </div>
 

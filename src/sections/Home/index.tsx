@@ -1,7 +1,7 @@
 import { Button } from '../../components/Button'
 import { useNav } from '../../hooks/useNav'
 
-import { ArrowDown, ArrowUpRight } from 'phosphor-react'
+import { ArrowDown, ArrowRight } from 'phosphor-react'
 import { HomeSection } from './Home.styles'
 
 export function Home() {
@@ -11,22 +11,22 @@ export function Home() {
     {
       amount: 2,
       symbol: 'k',
-      title: 'Totals Apps Developed',
+      title: 'Totais Apps desenvolvidos',
     },
     {
       amount: 39,
       symbol: '+',
-      title: 'Totals Consultants',
+      title: 'Consultores de Totais',
     },
     {
       amount: 11,
       symbol: '+',
-      title: 'Totals Awards won',
+      title: 'Prémios Totais ganhos',
     },
     {
       amount: 160,
       symbol: '',
-      title: 'Totals Employees',
+      title: 'Totais Empregados',
     },
   ]
 
@@ -43,8 +43,7 @@ export function Home() {
           <div className="col-lg-8">
             <div className="home__section__left">
               <h1>
-                WE CREATE <br /> <span>UNIQUE & EFFICIENT</span> DIGITAL
-                SOLUTIONS
+                NÓS CRIAMOS <span>SOLUÇÕES DIGITAIS</span> ÚNICAS E EFICIENTES
               </h1>
               <button className="ellipse__btn" onClick={handleClickAboutUs}>
                 <ArrowDown color="#FFFFFF" size={40} />
@@ -54,16 +53,16 @@ export function Home() {
           <div className="col-lg-4">
             <div className="home__section__right">
               <p>
-                StorgTech is an information and communication technology company
-                focused on the and web software, implementation of business
-                solutions...
+                A StorgTech é uma empresa de tecnologia de informação e
+                comunicação focada no software e na web, implementação de
+                soluções empresariais...
               </p>
               <Button
                 onClick={handleClickAboutUs}
                 className="button__get__in__touch"
                 variant="secondary"
               >
-                GET IN TOUCH <ArrowUpRight color="#FFFFFF" size={20} />
+                Continuar <ArrowRight color="#FFFFFF" size={20} />
               </Button>
             </div>
           </div>

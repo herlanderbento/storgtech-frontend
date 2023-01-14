@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
 
     body{
         background: ${(props) => props.theme['white-default']};
-        color: ${(props) => props.theme['gray-700']};
+        color: ${(props) => props.theme['dark-default']} !important;
         --webkit-font-smoothing: antialiased;
     }
 
@@ -27,6 +27,10 @@ export const GlobalStyle = createGlobalStyle`
 
     section{
         /* height: 120vh; */
+    }
+
+    p, span{
+        line-height: 2;
     }
 
 `

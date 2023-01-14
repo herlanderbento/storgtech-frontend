@@ -43,7 +43,7 @@ export function Home() {
           <div className="col-lg-8">
             <div className="home__section__left">
               <h1>
-                NÓS CRIAMOS <span>SOLUÇÕES DIGITAIS</span> ÚNICAS E EFICIENTES
+                Nós criamos <span>soluções integras</span> únicas & eficientes
               </h1>
               <button className="ellipse__btn" onClick={handleClickAboutUs}>
                 <ArrowDown color="#FFFFFF" size={40} />

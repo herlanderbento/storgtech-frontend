@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const HomeSection = styled.section`
   width: 100%;
-  height: 120vh;
+  min-height: 120vh;
 
   @media screen and (min-width: 1440px) {
     height: 140vh;
@@ -33,6 +33,7 @@ export const HomeSection = styled.section`
 
       span {
         color: ${(props) => props.theme['green-500']};
+        line-height: 0;
       }
 
       @media screen and (min-width: 1280px) {
@@ -84,9 +85,6 @@ export const HomeSection = styled.section`
     p {
       font-weight: 400;
       font-size: 0.875rem;
-      line-height: 2.5;
-
-      color: ${(props) => props.theme['gray-700']};
     }
 
     .button__get__in__touch {

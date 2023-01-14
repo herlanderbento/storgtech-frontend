@@ -18,7 +18,9 @@ export function Blog() {
         <div className="row">
           <div className="col-lg-12">
             <div className="blog__section__header">
-              <h3 className="blog__title">05 • Nosso Blog</h3>
+              <h3 className="blog__title">
+                05 • Nosso Blog{' Boletin informatico'}
+              </h3>
 
               <h2 className="blog__subtitle">Ver o nosso Blog mais recente</h2>
             </div>

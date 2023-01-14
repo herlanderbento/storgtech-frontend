@@ -7,6 +7,22 @@ import {
   UncontrolledAccordionCustom,
 } from './Faq.styles'
 
+const allFAQDatas = [
+  {
+    title: 'O que é a StorgTech?',
+    content: `A StorgTech é uma empresa do ramo das tecnologias de informação e comunicação vocacionada na
+    comercialização de softwares desktop e web, implementação de soluções empresariais incluindo
+    subscrições Microsoft e capacitação no uso de ferramentas tecnológicas. `,
+  },
+
+  {
+    title: 'Qual o setor de actuação da empresa?',
+    content: `A StorgTech é uma empresa do ramo das tecnologias de informação e comunicação vocacionada na
+    comercialização de softwares desktop e web, implementação de soluções empresariais incluindo
+    subscrições Microsoft e capacitação no uso de ferramentas tecnológicas. `,
+  },
+]
+
 export function FAQ() {
   const faqRef = useNav('faq')
 
@@ -25,30 +41,24 @@ export function FAQ() {
             <div className="faq__section_left">
               <h3 className="faq__title">06 • FAQ</h3>
 
-              <h2 className="faq__subtitle">Frequently asked questions</h2>
+              <h2 className="faq__subtitle">Perguntas mais frequentes</h2>
               <p>
-                Use our built-in analytics dashboard to pull valuable insights
-                and monitor the value of your crypto portfolio over time.{' '}
+                Utilize a nossa análise integrada Utilize a nossa análise
+                integrada painel de instrumentos Use o nosso painel de
+                instrumentos anal ytics embutido para puxar valioso ins.{' '}
               </p>
             </div>
           </div>
           <div className="col-lg-6 pt__70">
             <UncontrolledAccordionCustom defaultOpen="1">
               {Children.toArray(
-                arrayInfo.map((content, count) => (
+                allFAQDatas.map((data, count) => (
                   <AccordionItemCustom>
                     <AccordionHeader targetId={String(count + 1)}>
-                      {content}
+                      {data.title}
                     </AccordionHeader>
                     <AccordionBody accordionId={String(count + 1)}>
-                      <strong>
-                        This is the first item&#39;s accordion body.
-                      </strong>
-                      You can modify any of this with custom CSS or overriding
-                      our default variables. It&#39;s also worth noting that
-                      just about any HTML can go within the{' '}
-                      <code>.accordion-body</code>, though the transition does
-                      limit overflow.
+                      <p>{data.content}</p>
                     </AccordionBody>
                   </AccordionItemCustom>
                 )),

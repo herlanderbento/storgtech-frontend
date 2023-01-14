@@ -24,7 +24,7 @@ export function ClientesAndCollaborators() {
           <div className="col-lg-12">
             <div className="clients__and__collaborators__header">
               <h3 className="clients__and__collaborators__title">
-                04.1 • Os nossos Clientes e Colaboradores
+                04.1 • Nossos Clientes e Colaboradores
               </h3>
 
               <h2 className="clients__and__collaborators__subtitle">

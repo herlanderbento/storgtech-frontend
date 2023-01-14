@@ -26,24 +26,24 @@ export function AboutUS() {
             <div className="about__us__section__left">
               <h3 className="about__us__title">02 • About Us</h3>
               <h2 className="about__us__subtitle">
-                helping people to live better than before.
+                “O treinamento faz parte do nosso programa de desenvolvimento”
               </h2>
 
               <p className="about__us__description">
-                StorgTech is an information and communication technology company
-                focused on the and web software, implementation of business
-                solutions including Microsoft subscriptions and Microsoft
-                subscriptions and training in the use of technological tools. We
-                also detect failures as well as missing information in national
-                and international sites, and provide proposals or
-                recommendations for improvement.
+                A StorgTech é uma empresa do ramo das tecnologias de informação
+                e comunicação vocacionada na comercialização de softwares
+                desktop e web, implementação de soluções empresariais incluindo
+                subscrições Microsoft e capacitação no uso de ferramentas
+                tecnológicas. Também detectamos falhas bem como informações em
+                falta em sites nacionais e internacionais, e fornecemos
+                propostas ou recomendações de melhoria.
               </p>
 
               <button
                 onClick={handleClickServices}
                 className="btn__see__services"
               >
-                See our services <ArrowRight color="#2BD0C9" size={16} />
+                Ver nossos serviços <ArrowRight color="#2BD0C9" size={16} />
               </button>
             </div>
           </div>
@@ -70,8 +70,8 @@ export function AboutUS() {
                   <div className="about__us__single__content">
                     <Quotes size={62} color="#2BD0C9" />
                     <p>
-                      Our objective is to create custom base software solutions
-                      ...
+                      O nosso objectivo é criar soluções de software de base
+                      personalizadas
                     </p>
                   </div>
                 </div>
@@ -83,34 +83,35 @@ export function AboutUS() {
           <div className="col-lg-4">
             <div className="about__us__objects__items">
               <h3>
-                <Rocket color="#2BD0C9" size={42} /> Mission
+                <Rocket color="#2BD0C9" size={42} /> Missão
               </h3>
               <p>
-                To help individuals and legal entities (companies), national and
-                international reach their full potential.
+                Ajudar as pessoas singulares e coletivas (empresas), nacionais e
+                internacionais alcançarem todo seus potenciais.
               </p>
             </div>
           </div>
           <div className="col-lg-4">
             <div className="about__us__objects__items">
               <h3>
-                <GlobeHemisphereEast color="#2BD0C9" size={42} /> Vision
+                <GlobeHemisphereEast color="#2BD0C9" size={42} /> Visão
               </h3>
               <p>
-                To be a reference in the national and international market in
-                technologies, business solutions and training of individuals or
-                legal entities (companies).
+                Ser uma referência no mercado nacional e internacional em
+                tecnologias, soluções empresariais e capacitação de pessoas
+                singulares ou coletivas (empresas).
               </p>
             </div>
           </div>
           <div className="col-lg-4">
             <div className="about__us__objects__items">
               <h3>
-                <CircleWavyCheck color="#2BD0C9" size={42} /> Values
+                <CircleWavyCheck color="#2BD0C9" size={42} /> Valores
               </h3>
               <p>
-                Creativity • Innovation • Social responsibility •
-                Personalization • Productivity • Human capital valorization.
+                Transparência • Criatividade • Inovação • Responsabilidade
+                social • Personalização • Produtividade • Valorização do capital
+                humano.
               </p>
               {/* <ul>
                 <li>Creativity</li>

@@ -24,7 +24,7 @@ export function AboutUS() {
         <div className="row align-items-center mb__30">
           <div className="col-lg-6">
             <div className="about__us__section__left">
-              <h3 className="about__us__title">02 • About Us</h3>
+              <h3 className="about__us__title">02 • Sobre nós</h3>
               <h2 className="about__us__subtitle">
                 “O treinamento faz parte do nosso programa de desenvolvimento”
               </h2>

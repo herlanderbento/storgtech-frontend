@@ -10,7 +10,7 @@ export const AboutUsSection = styled.section`
   }
 
   @media screen and (min-width: 1440px) {
-    height: 110vh;
+    height: 120vh;
   }
 
   position: relative;
@@ -56,7 +56,6 @@ export const AboutUsSection = styled.section`
     .about__us__description {
       font-weight: 400;
       font-size: 1rem;
-      line-height: 28px;
     }
 
     .btn__see__services {
@@ -73,6 +72,10 @@ export const AboutUsSection = styled.section`
   .about__us__section__right {
     padding-top: 3rem;
 
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 4rem;
+    }
+
     .about__us__single__Wrapper img {
       width: 100%;
       object-fit: contain;
@@ -85,19 +88,6 @@ export const AboutUsSection = styled.section`
       img {
         border-radius: 0.25rem;
         position: relative;
-
-        /* &::before {
-          background-color: red;
-          content: '2';
-          position: absolute;
-          left: 0;
-          top: -20px;
-          width: 100%;
-          height: 80px;
-          opacity: 1;
-          z-index: 1;
-          pointer-events: none;
-        } */
       }
     }
 
@@ -107,6 +97,7 @@ export const AboutUsSection = styled.section`
       background-color: ${(props) => props.theme['gray-100']};
 
       padding: 2rem 1rem;
+      margin-top: 2rem;
 
       text-align: center;
 
@@ -122,7 +113,6 @@ export const AboutUsSection = styled.section`
 
   .about__us__objects__items {
     padding: 1rem;
-
     h3 {
       font-family: 'Mochiy Pop One';
       font-size: 1.75rem;
@@ -135,6 +125,5 @@ export const AboutUsSection = styled.section`
     }
 
     font-size: 0.875rem;
-    line-height: 1.8;
   }
 `

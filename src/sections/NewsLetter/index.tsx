@@ -1,5 +1,5 @@
 import { useNav } from '../../hooks/useNav'
-import { NewsletterSection } from './Newsletter.styles'
+import { NewsletterSection } from './NewsLetter.styles'
 import { ArrowRight, Calendar } from 'phosphor-react'
 import { Button } from '../../components/Button'
 

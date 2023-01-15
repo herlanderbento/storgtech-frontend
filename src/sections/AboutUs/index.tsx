@@ -10,16 +10,16 @@ import {
 } from 'phosphor-react'
 
 export function AboutUS() {
-  const aboutUsRef = useNav('About Us')
+  const aboutUsRef = useNav('about__us')
 
   function handleClickServices() {
     document
-      .getElementById('servicesSection')
+      .getElementById('services__section')
       ?.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
-    <AboutUsSection ref={aboutUsRef} id="aboutusSection">
+    <AboutUsSection ref={aboutUsRef} id="about__us__section">
       <div className="container">
         <div className="row align-items-center mb__30">
           <div className="col-lg-6">

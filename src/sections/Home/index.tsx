@@ -5,7 +5,7 @@ import { ArrowDown, ArrowRight } from 'phosphor-react'
 import { HomeSection } from './Home.styles'
 
 export function Home() {
-  const homeRef = useNav('Home')
+  const homeRef = useNav('home')
 
   const infoSectionRightItens = [
     {
@@ -32,12 +32,12 @@ export function Home() {
 
   function handleClickAboutUs() {
     document
-      .getElementById('aboutusSection')
+      .getElementById('about__us__section')
       ?.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
-    <HomeSection ref={homeRef} id="homeSection">
+    <HomeSection ref={homeRef} id="home__section">
       <div className="container">
         <div className="row">
           <div className="col-lg-8">

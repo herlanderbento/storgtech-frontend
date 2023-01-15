@@ -6,7 +6,7 @@ export const FooterContainer = styled.footer`
   padding: 3.75rem 1rem;
 
   @media screen and (min-width: 1280px) {
-    margin-top: 15rem;
+    margin-top: 12rem;
   }
 
   @media screen and (min-width: 1440px) {

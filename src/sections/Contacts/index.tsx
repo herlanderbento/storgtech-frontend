@@ -4,24 +4,24 @@ import { useNav } from '../../hooks/useNav'
 import { ContactsSection } from './Contact.styles'
 
 export function Contacts() {
-  const contactsRef = useNav('Contacts')
+  const contactsRef = useNav('contacts')
 
   function handleSubmit(event: FormEvent) {
     event.preventDefault()
   }
 
   return (
-    <ContactsSection ref={contactsRef} id="contactsSection">
+    <ContactsSection ref={contactsRef} id="contacts__section">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-12">
             <div className="contacts__section__items">
-              <div className="col-lg-6">
+              <div className="col-lg-7">
                 <div className="contacts__header">
-                  <h3 className="contacts__title">07 • Contacts</h3>
+                  <h3 className="contacts__title">07 • Contacta-nos</h3>
 
                   <h2 className="contacts__subtitle">
-                    Get In Tuch With Us With Any Questions
+                    Entre em contacto connosco
                   </h2>
                 </div>
               </div>

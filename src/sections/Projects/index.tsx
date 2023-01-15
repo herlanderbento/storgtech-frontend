@@ -7,7 +7,7 @@ import 'slick-carousel/slick/slick-theme.css'
 import { ProjectsSection } from './Projects.styles'
 
 export function Projects() {
-  const projectsRef = useNav('Projects')
+  const projectsRef = useNav('projects')
 
   const settings = {
     // centerMode: true,
@@ -30,7 +30,7 @@ export function Projects() {
   ]
 
   return (
-    <ProjectsSection ref={projectsRef} id="projectsSection">
+    <ProjectsSection ref={projectsRef} id="projects__section">
       <div className="container">
         <div className="row justify-content-between align-items-center">
           <div className="col-lg-10">

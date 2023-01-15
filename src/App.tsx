@@ -13,10 +13,9 @@ import { Services } from './sections/Services'
 import { Projects } from './sections/Projects'
 import { ClientesAndCollaborators } from './sections/ClientsAndCollaborators'
 import { Contacts } from './sections/Contacts'
-import { Blog } from './sections/Blog'
+import { Newsletter } from './sections/Newsletter'
 import { FAQ } from './sections/FAQ'
 import { Footer } from './components/Footer'
-// import { NewsLetter } from './sections/NewsLetter'
 
 function App() {
   return (
@@ -29,9 +28,8 @@ function App() {
         <Services />
         <Projects />
         <ClientesAndCollaborators />
-        <Blog />
+        <Newsletter />
         <FAQ />
-        {/* <NewsLetter /> */}
         <Contacts />
         <Footer />
       </NavProvider>

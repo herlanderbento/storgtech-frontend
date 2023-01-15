@@ -7,10 +7,41 @@ import { HeaderContainer, Nav, Navbar, NavLink } from './Header.styles'
 
 import logo from './../../assets/logoazul.png'
 
+const navLinks = [
+  {
+    name: 'Home',
+    ref: 'home',
+    counter: '01',
+  },
+  {
+    name: 'Sobre Nós',
+    ref: 'about__us',
+    counter: '02',
+  },
+  {
+    name: 'Serviços',
+    ref: 'services',
+    counter: '03',
+  },
+  {
+    name: 'Projectos',
+    ref: 'projects',
+    counter: '04',
+  },
+  {
+    name: 'Boletim Informativo',
+    ref: 'newsletter',
+    counter: '05',
+  },
+]
+
+interface NavLinksProps {
+  name: string
+  ref: string
+  counter: string
+}
 function Header() {
   const { activeLinkId } = useContext(NavContext)
-
-  const navLinks = ['Home', 'About Us', 'Services', 'Projects', 'Blog']
 
   useEffect(() => {
     window.addEventListener('scroll', headerSticky)
@@ -21,18 +52,20 @@ function Header() {
 
   function handleClickLogo() {
     document
-      .getElementById('homeSection')
+      .getElementById('home__section')
       ?.scrollIntoView({ behavior: 'smooth' })
   }
 
   function handleClickContactUs() {
     document
-      .getElementById('contactsSection')
+      .getElementById('contacts__section')
       ?.scrollIntoView({ behavior: 'smooth' })
   }
 
-  function renderNavLink(content: string, counter: number) {
-    const scrollToId = `${content.toLowerCase().replace(/\s/g, '')}Section`
+  function renderNavLink(data: NavLinksProps) {
+    const { name, ref, counter } = data
+
+    const scrollToId = `${ref.toLowerCase().replace(/\s/g, '')}__section`
 
     const handleClickNav = () => {
       document
@@ -41,13 +74,13 @@ function Header() {
     }
 
     return (
-      <NavItem key={content}>
+      <NavItem key={ref}>
         <NavLink
           onClick={handleClickNav}
-          className={activeLinkId === content ? 'active' : ''}
+          className={activeLinkId === ref ? 'active' : ''}
         >
-          <span>{String(counter + 1).padStart(2, '0')}</span>
-          <a> {content}</a>
+          <span>{counter}</span>
+          <a> {name}</a>
         </NavLink>
       </NavItem>
     )
@@ -61,10 +94,10 @@ function Header() {
             <img src={logo} alt="logo" />
           </NavbarBrand>
           <Nav className="me-auto">
-            {navLinks.map((nav, count) => renderNavLink(nav, count))}
+            {navLinks.map((data: NavLinksProps) => renderNavLink(data))}
           </Nav>
           <Button onClick={handleClickContactUs} variant="primary">
-            Contact Us
+            Contacta-nos
           </Button>
         </Navbar>
       </div>

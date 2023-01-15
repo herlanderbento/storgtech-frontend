@@ -53,7 +53,7 @@ export const NavLink = styled(NavLinkReactstrap)`
   cursor: pointer !important;
   font-size: 1rem;
   font-weight: 500;
-  text-transform: uppercase;
+  text-transform: capitalize;
 
   color: ${(props) => props.theme['gray-700']} !important;
 

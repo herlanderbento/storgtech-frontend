@@ -11,10 +11,10 @@ import {
 } from 'phosphor-react'
 
 export function Services() {
-  const servicesRef = useNav('Services')
+  const servicesRef = useNav('services')
 
   return (
-    <OurServicesContainer ref={servicesRef} id="servicesSection">
+    <OurServicesContainer ref={servicesRef} id="services__section">
       <div className="container">
         <div className="row align-items-center mb__40">
           <div className="col-lg-6">

@@ -1,29 +1,68 @@
-import { Col, Container, Row } from 'reactstrap'
+import { useNav } from '../../hooks/useNav'
+import { NewsletterSection } from './Newsletter.styles'
+import { ArrowRight, Calendar } from 'phosphor-react'
 import { Button } from '../../components/Button'
-import { InputCard, NewsLetterSection } from './NewsLetter.styles'
 
-export function NewsLetter() {
+export function Newsletter() {
+  const newsletterRef = useNav('newsletter')
+
+  const images = [
+    '/images/blog/blog-10.jpg',
+    '/images/blog/blog-5.jpg',
+    '/images/blog/blog-4.jpg',
+  ]
+
   return (
-    <NewsLetterSection>
-      <Container>
-        <Row className="justify-content-center">
-          <Col lg="7" sm="12" md="12">
-            <form>
-              <InputCard className="mt-4">
-                <div className="input-group">
-                  <span className="input-group-prepend input-group-text"></span>
-                  <input
-                    type="text"
-                    className="form-control form-control-lg"
-                    placeholder="Digita o seu email"
-                  />
+    <NewsletterSection ref={newsletterRef} id="newsletter__section">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12">
+            <div className="newsletter__section__header">
+              <h3 className="newsletter__title">
+                05 • Nosso Boletim informativo
+              </h3>
+
+              <h2 className="newsletter__subtitle">
+                Ver o nosso Boletim informativo
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div className="row align-items-stretch mt__25">
+          {images.map(function (content, key) {
+            return (
+              <div key={key} className="col-lg-4">
+                <div className="newsletter__section__items">
+                  <img src={content} alt="" className="img-fluid" />
+
+                  <div className="newsletter__items__description">
+                    <label className="newsletter__items__date">
+                      <Calendar color="#2BD0C9" size={18} /> {'   '} Em Maio
+                      14,2021
+                    </label>
+                    <h3 className="newsletter__items__titles">
+                      Vantagens da Async/Await
+                    </h3>
+                    <p className="newsletter__items__paragraph">
+                      Utilize a nossa análise integrada Utilize a nossa análise
+                      integrada painel.{' '}
+                    </p>
+
+                    <button className="newsletter__btn__see__more">
+                      Ver mais <ArrowRight color="#2BD0C9" size={24} />
+                    </button>
+                  </div>
                 </div>
-                <Button variant={'primary'}>Enviar</Button>
-              </InputCard>
-            </form>
-          </Col>
-        </Row>
-      </Container>
-    </NewsLetterSection>
+              </div>
+            )
+          })}
+        </div>
+        <div className="newsletter__cta">
+          <Button className="button__see__more" variant="secondary">
+            Ver mais <ArrowRight color="#FFFFFF" size={20} />
+          </Button>
+        </div>
+      </div>
+    </NewsletterSection>
   )
 }

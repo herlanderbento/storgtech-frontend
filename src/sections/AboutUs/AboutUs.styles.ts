@@ -3,17 +3,17 @@ import styled from 'styled-components'
 export const AboutUsSection = styled.section`
   padding: 70px 15px 0;
   width: 100%;
-  height: 140vh;
+  clear: both;
 
-  @media screen and (max-width: 1280px) {
-    height: 140vh;
+  @media screen and (min-width: 1280px) {
+    height: 130vh;
+  }
+
+  @media screen and (min-width: 1440px) {
+    height: 110vh;
   }
 
   position: relative;
-
-  .mb__30 {
-    margin-bottom: 30px !important;
-  }
 
   .about__us__section__left,
   .about__us__section__right {

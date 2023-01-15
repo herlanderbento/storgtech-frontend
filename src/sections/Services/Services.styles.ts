@@ -4,14 +4,15 @@ export const OurServicesContainer = styled.section`
   padding: 60px 15px;
 
   width: 100%;
-  height: 130vh;
+  clear: both;
 
-  @media screen and (max-width: 1280px) {
-    height: 130vh;
+  @media screen and (min-width: 1280px) {
+    height: 140vh;
+    margin-top: 5.5rem;
   }
 
   .mb__40 {
-    margin-bottom: 30px !important;
+    margin-bottom: 20px !important;
   }
 
   .our__services__section__left,
@@ -41,7 +42,6 @@ export const OurServicesContainer = styled.section`
   .our__services__description {
     font-weight: 400;
     font-size: 1rem;
-    line-height: 28px;
   }
 
   .our__services__section__right {
@@ -59,9 +59,13 @@ export const OurServicesContainer = styled.section`
     height: 100%;
     position: relative;
     border: 1px solid;
-    padding: 25px 30px 30px;
+    padding: 25px 30px;
     border-radius: 5px;
     border-color: #e6e9ef;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     h3 {
       font-size: 1.125rem;
@@ -73,6 +77,7 @@ export const OurServicesContainer = styled.section`
 
     p {
       font-size: 0.875rem;
+      margin: 0;
     }
   }
 `

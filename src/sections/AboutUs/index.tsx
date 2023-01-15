@@ -79,7 +79,7 @@ export function AboutUS() {
             </div>
           </div>
         </div>
-        <div className="row ">
+        <div className="row mt__80">
           <div className="col-lg-4">
             <div className="about__us__objects__items">
               <h3>

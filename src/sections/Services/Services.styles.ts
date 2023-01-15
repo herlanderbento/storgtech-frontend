@@ -11,6 +11,10 @@ export const OurServicesContainer = styled.section`
     margin-top: 5.5rem;
   }
 
+  @media screen and (min-width: 1440px) {
+    height: 120vh;
+  }
+
   .mb__40 {
     margin-bottom: 20px !important;
   }

@@ -18,9 +18,7 @@ export function Blog() {
         <div className="row">
           <div className="col-lg-12">
             <div className="blog__section__header">
-              <h3 className="blog__title">
-                05 • Nosso Blog{' Boletin informatico'}
-              </h3>
+              <h3 className="blog__title">05 • Nosso Boletim informativo</h3>
 
               <h2 className="blog__subtitle">Ver o nosso Blog mais recente</h2>
             </div>
@@ -43,8 +41,7 @@ export function Blog() {
                     </h3>
                     <p className="blog__items__paragraph">
                       Utilize a nossa análise integrada Utilize a nossa análise
-                      integrada painel de instrumentos Use o nosso painel de
-                      instrumentos anal ytics embutido para puxar valioso ins.{' '}
+                      integrada painel.{' '}
                     </p>
 
                     <button className="blog__btn__see__more">

@@ -4,10 +4,12 @@ export const BlogSection = styled.section`
   background-color: ${(props) => props.theme['white-500']};
   padding: 80px 15px;
 
-  height: 130vh;
+  @media screen and (min-width: 1280px) {
+    height: 142vh;
+  }
 
   @media screen and (min-width: 1440px) {
-    height: 140vh;
+    height: 138vh;
   }
 
   .blog__header {
@@ -76,7 +78,7 @@ export const BlogSection = styled.section`
 
     .blog__items__titles {
       font-weight: 700;
-      font-size: 1.5rem;
+      font-size: 1.25rem;
 
       color: ${(props) => props.theme['dark-default']};
       margin-top: 0.875rem;

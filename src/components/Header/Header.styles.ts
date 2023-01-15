@@ -55,10 +55,19 @@ export const NavLink = styled(NavLinkReactstrap)`
   font-weight: 500;
   text-transform: capitalize;
 
-  color: ${(props) => props.theme['gray-700']} !important;
+  color: ${(props) => props.theme['blue-700']} !important;
 
   display: flex;
   flex-direction: column;
+
+  &:hover {
+    color: ${(props) => props.theme['green-500']} !important;
+
+    span {
+      font-size: 0.75rem;
+      color: ${(props) => props.theme['green-500']};
+    }
+  }
 
   &::before {
     position: absolute;
@@ -68,7 +77,8 @@ export const NavLink = styled(NavLinkReactstrap)`
 
   span {
     font-size: 0.75rem;
-    color: ${(props) => props.theme['gray-100']};
+    color: ${(props) => props.theme['blue-700']};
+    opacity: 0.6;
   }
 
   &.active {

@@ -25,12 +25,13 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 1rem;
     }
 
-    section{
-        /* height: 120vh; */
+    ul{
+        list-style-type: none;
     }
 
     p, span{
         line-height: 2;
     }
+
 
 `

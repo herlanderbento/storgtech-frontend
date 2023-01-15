@@ -3,7 +3,7 @@ import { NewsletterSection } from './Newsletter.styles'
 import { ArrowRight, Calendar } from 'phosphor-react'
 import { Button } from '../../components/Button'
 
-export function Newsletter() {
+export function NewsLetter() {
   const newsletterRef = useNav('newsletter')
 
   const images = [

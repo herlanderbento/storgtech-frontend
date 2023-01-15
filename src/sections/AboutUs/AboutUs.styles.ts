@@ -5,9 +5,9 @@ export const AboutUsSection = styled.section`
   width: 100%;
   min-height: 120vh;
 
-  /* @media screen and (max-width: 1440px) {
-    height: 100vh;
-  } */
+  @media screen and (max-width: 1280px) {
+    height: 120vh;
+  }
 
   position: relative;
 

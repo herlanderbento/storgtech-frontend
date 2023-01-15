@@ -3,11 +3,9 @@ import styled from 'styled-components'
 export const ClientesAndCollaboratorsSection = styled.section`
   padding: 20px 15px 60px;
 
-  height: 65vh;
-
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1280px) {
     padding-bottom: 90px;
-    height: 74vh;
+    height: 76vh;
   }
 
   .clients__and__collaborators__header {

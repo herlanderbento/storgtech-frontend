@@ -8,21 +8,27 @@ import { FormEvent } from 'react'
 import { Button } from '../Button'
 import { FooterContainer, InputCard } from './Footer.styles'
 
+const navLinks = [
+  {
+    name: 'Home',
+    ref: 'home',
+  },
+  {
+    name: 'Clientes & Parceiros',
+    ref: 'clients__and__collaborators',
+  },
+  {
+    name: 'Perguntas frequentes',
+    ref: 'faq',
+  },
+]
+
 export function Footer() {
-  const navLinks = [
-    {
-      name: 'Home',
-      ref: 'home',
-    },
-    {
-      name: 'Clientes & Parceiros',
-      ref: 'clients__and__collaborators',
-    },
-    {
-      name: 'Perguntas frequentes',
-      ref: 'faq',
-    },
-  ]
+  function handleClickLogo() {
+    document
+      .getElementById('home__section')
+      ?.scrollIntoView({ behavior: 'smooth' })
+  }
 
   function renderNavLink(name: string, ref: string) {
     const scrollToId = `${ref.toLowerCase().replace(/\s/g, '')}__section`
@@ -52,7 +58,12 @@ export function Footer() {
         <div className="row justify-content-between align-items-center">
           <div className="col-lg-3">
             <div className="footer__logo">
-              <img src="/images/logo.png" className="img-fluid" alt="logo" />
+              <img
+                src="/images/logo.png"
+                onClick={handleClickLogo}
+                className="img-fluid"
+                alt="logo"
+              />
             </div>
           </div>
           <div className="col-lg-4">

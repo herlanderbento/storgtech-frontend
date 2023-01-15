@@ -28,6 +28,7 @@ export const FooterContainer = styled.footer`
   .footer__logo {
     .img-fluid {
       width: 64%;
+      cursor: pointer;
     }
   }
 

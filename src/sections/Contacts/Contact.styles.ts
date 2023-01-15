@@ -77,7 +77,6 @@ export const ContactsSection = styled.section`
 
     .btn__send__message {
       padding: 1rem 2.75rem;
-      text-transform: uppercase;
     }
   }
 `

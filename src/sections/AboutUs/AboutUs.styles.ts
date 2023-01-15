@@ -3,10 +3,10 @@ import styled from 'styled-components'
 export const AboutUsSection = styled.section`
   padding: 70px 15px 0;
   width: 100%;
-  min-height: 120vh;
+  height: 140vh;
 
   @media screen and (max-width: 1280px) {
-    height: 120vh;
+    height: 140vh;
   }
 
   position: relative;

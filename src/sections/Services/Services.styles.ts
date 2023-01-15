@@ -4,7 +4,11 @@ export const OurServicesContainer = styled.section`
   padding: 60px 15px;
 
   width: 100%;
-  max-height: 100vh;
+  height: 130vh;
+
+  @media screen and (max-width: 1280px) {
+    height: 130vh;
+  }
 
   .mb__40 {
     margin-bottom: 30px !important;

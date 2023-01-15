@@ -4,7 +4,7 @@ export const HomeSection = styled.section`
   width: 100%;
   min-height: 120vh;
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1280px) {
     height: 140vh;
   }
 

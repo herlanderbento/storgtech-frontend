@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ProjectsSection = styled.section`
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
   padding: 40px 15px 30px;
 
   width: 100%;
@@ -10,12 +10,14 @@ export const ProjectsSection = styled.section`
 
   /* background: url(/images/icons/background-about-us.png) no-repeat; */
 
-  @media screen and (min-width: 1440px) {
-    height: 120vh;
+  @media screen and (min-width: 1280px) {
+    height: 130vh;
   }
 
-  .mt__60 {
-    margin-top: 60px;
+  @media screen and (min-width: 1440px) {
+    .mt__60 {
+      margin-top: 60px;
+    }
   }
 
   .projects__section__left,

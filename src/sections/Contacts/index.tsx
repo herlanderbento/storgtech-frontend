@@ -1,13 +1,23 @@
-import { FormEvent } from 'react'
-import { Button } from '../../components/Button'
+import { FormEvent, useState } from 'react'
 import { useNav } from '../../hooks/useNav'
 import { ContactsSection } from './Contact.styles'
 
 export function Contacts() {
   const contactsRef = useNav('contacts')
+  const [isSending, setIsSending] = useState(false)
+  const [isSent, setIsSent] = useState(false)
 
   function handleSubmit(event: FormEvent) {
     event.preventDefault()
+  }
+
+  const handleClick = () => {
+    setIsSending(true)
+    setTimeout(() => {
+      setIsSending(false)
+      setIsSent(true)
+      setTimeout(() => setIsSent(false), 2500)
+    }, 2000)
   }
 
   return (
@@ -52,12 +62,25 @@ export function Contacts() {
                       ></textarea>
                     </div>
                     <div className="form-group">
-                      <Button
-                        className="btn__send__message"
-                        variant="secondary"
+                      <button
+                        onClick={handleClick}
+                        className={
+                          isSending || isSent
+                            ? 'btn__send__message sending'
+                            : 'btn__send__message'
+                        }
                       >
-                        Envia sua mensagem
-                      </Button>
+                        <span className="icon material-symbols-outlined">
+                          {isSent ? 'check' : 'send'}
+                        </span>
+                        <span className="text">
+                          {isSending
+                            ? 'Enviando ...'
+                            : isSent
+                            ? 'Enviado'
+                            : 'Enviar mensagem'}
+                        </span>
+                      </button>
                     </div>
                   </form>
                 </div>

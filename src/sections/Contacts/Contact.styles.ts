@@ -79,4 +79,88 @@ export const ContactsSection = styled.section`
       padding: 1rem 2.75rem;
     }
   }
+
+  button.btn__send__message {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 56px;
+    width: 280px;
+    border: 0;
+    border-radius: 0.25rem;
+    color: ${(props) => props.theme['white-default']};
+    background: ${(props) => props.theme['blue-700']};
+    cursor: pointer;
+
+    .icon {
+      font-size: 28px;
+    }
+  }
+
+  button.sending .text {
+    animation: textAnimation 5s both;
+  }
+
+  button.sending .icon {
+    animation: iconAnimation 5s both;
+  }
+
+  @keyframes textAnimation {
+    0%,
+    30% {
+      translate: 0 0;
+    }
+    39.9% {
+      translate: 0 100px;
+    }
+    40% {
+      translate: 300px 100px;
+    }
+    40.1% {
+      translate: 300px -60px;
+    }
+    40.2% {
+      translate: 33px -60px;
+    }
+    45% {
+      translate: 33px 0;
+    }
+    95% {
+      translate: 33px 0;
+    }
+    100% {
+      translate: 0 0;
+    }
+  }
+
+  @keyframes iconAnimation {
+    0%,
+    5% {
+      translate: 0 0;
+    }
+    20%,
+    30% {
+      translate: -250px 0;
+    }
+    40% {
+      translate: 200px 0;
+      scale: 2;
+    }
+    40.1% {
+      translate: 200px -60px;
+      scale: 1;
+    }
+    40.2% {
+      translate: 34px -60px;
+    }
+    45%,
+    95% {
+      translate: 34px 0;
+    }
+    100% {
+      translate: 0 0;
+    }
+  }
 `

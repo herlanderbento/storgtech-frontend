@@ -10,7 +10,7 @@ export const FooterContainer = styled.footer`
   }
 
   @media screen and (min-width: 1440px) {
-    margin-top: 10rem;
+    margin-top: 12rem;
   }
 
   .separator {

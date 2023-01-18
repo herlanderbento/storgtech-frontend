@@ -1,8 +1,9 @@
-import { useContext, useEffect } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { NavbarBrand, NavItem } from 'reactstrap'
+import { List } from 'phosphor-react'
 import { NavContext } from '../../contexts/NavContext'
-import { headerSticky } from '../../utils/headerSticky'
 import { Button } from '../Button'
+import { handleClickSmoothScrolling, handleHeaderSticky } from '../../utils'
 import { HeaderContainer, Nav, Navbar, NavLink } from './Header.styles'
 
 import logo from './../../assets/logoazul.png'
@@ -40,43 +41,31 @@ interface NavLinksProps {
   ref: string
   counter: string
 }
+
 function Header() {
   const { activeLinkId } = useContext(NavContext)
+  const [toggle, setToggle] = useState(false)
+
+  const handleMenuToggle = () => setToggle(!toggle)
+  const closeMenuToggle = () => setToggle(false)
 
   useEffect(() => {
-    window.addEventListener('scroll', headerSticky)
+    window.addEventListener('scroll', handleHeaderSticky)
     return () => {
-      window.removeEventListener('scroll', headerSticky)
+      window.removeEventListener('scroll', handleHeaderSticky)
     }
   })
-
-  function handleClickLogo() {
-    document
-      .getElementById('home__section')
-      ?.scrollIntoView({ behavior: 'smooth' })
-  }
-
-  function handleClickContactUs() {
-    document
-      .getElementById('contacts__section')
-      ?.scrollIntoView({ behavior: 'smooth' })
-  }
 
   function renderNavLink(data: NavLinksProps) {
     const { name, ref, counter } = data
 
-    const scrollToId = `${ref.toLowerCase().replace(/\s/g, '')}__section`
-
-    const handleClickNav = () => {
-      document
-        .getElementById(scrollToId)
-        ?.scrollIntoView({ behavior: 'smooth' })
-    }
-
     return (
       <NavItem key={ref}>
         <NavLink
-          onClick={handleClickNav}
+          onClick={() => {
+            handleClickSmoothScrolling(ref)
+            closeMenuToggle()
+          }}
           className={activeLinkId === ref ? 'active' : ''}
         >
           <span>{counter}</span>
@@ -88,17 +77,30 @@ function Header() {
 
   return (
     <HeaderContainer>
-      <div className={'container'}>
+      <div className="container">
         <Navbar>
-          <NavbarBrand onClick={handleClickLogo}>
+          <NavbarBrand onClick={() => handleClickSmoothScrolling('home')}>
             <img src={logo} alt="logo" />
           </NavbarBrand>
-          <Nav className="me-auto">
-            {navLinks.map((data: NavLinksProps) => renderNavLink(data))}
-          </Nav>
-          <Button onClick={handleClickContactUs} variant="primary">
-            Contacta-nos
-          </Button>
+          <button className="hamburger" onClick={handleMenuToggle}>
+            {toggle ? (
+              <List color="#010101" size={32} />
+            ) : (
+              <List color="#010101" size={32} />
+            )}
+          </button>
+          <div className={toggle ? 'navbar-menu active' : 'navbar-menu'}>
+            <Nav className="me-auto">
+              {navLinks.map((data: NavLinksProps) => renderNavLink(data))}
+            </Nav>
+            <Button
+              onClick={() => handleClickSmoothScrolling('contacts')}
+              className="btn__contacts"
+              variant="primary"
+            >
+              Contacta-nos
+            </Button>
+          </div>
         </Navbar>
       </div>
     </HeaderContainer>

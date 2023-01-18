@@ -3,6 +3,7 @@ import { useNav } from '../../hooks/useNav'
 
 import { ArrowDown, ArrowRight } from 'phosphor-react'
 import { HomeSection } from './Home.styles'
+import { handleClickSmoothScrolling } from '../../utils'
 
 export function Home() {
   const homeRef = useNav('home')
@@ -30,12 +31,6 @@ export function Home() {
     },
   ]
 
-  function handleClickAboutUs() {
-    document
-      .getElementById('about__us__section')
-      ?.scrollIntoView({ behavior: 'smooth' })
-  }
-
   return (
     <HomeSection ref={homeRef} id="home__section">
       <div className="container">
@@ -45,7 +40,10 @@ export function Home() {
               <h1>
                 Nós criamos <span>soluções integradas</span> únicas & eficientes
               </h1>
-              <button className="ellipse__btn" onClick={handleClickAboutUs}>
+              <button
+                className="ellipse__btn"
+                onClick={() => handleClickSmoothScrolling('about__us')}
+              >
                 <ArrowDown color="#FFFFFF" size={40} />
               </button>
             </div>
@@ -58,7 +56,7 @@ export function Home() {
                 soluções empresariais...
               </p>
               <Button
-                onClick={handleClickAboutUs}
+                onClick={() => handleClickSmoothScrolling('about__us')}
                 className="button__get__in__touch"
                 variant="secondary"
               >

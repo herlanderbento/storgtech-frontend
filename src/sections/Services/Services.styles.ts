@@ -40,6 +40,20 @@ export const OurServicesContainer = styled.section`
     font-weight: 400;
     line-height: 58px;
 
+    @media screen and (max-width: 760px) {
+      font-size: 2rem;
+      padding: 0 !important;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 1.75rem;
+      line-height: 48px;
+    }
+
+    @media screen and (max-width: 390px) {
+      font-size: 1.5rem;
+    }
+
     color: ${(props) => props.theme['dark-default']};
   }
 
@@ -50,6 +64,10 @@ export const OurServicesContainer = styled.section`
 
   .our__services__section__right {
     padding-top: 4.75rem;
+
+    @media screen and (max-width: 992px) {
+      padding-top: 1rem;
+    }
 
     .paragraph__01,
     .paragraph__02 {

@@ -45,7 +45,7 @@ export function Services() {
           </div>
         </div>
         <div className="row align-items-stretch">
-          <div className="col-lg-3">
+          <div className="col-lg-3 col-md-6 col-sm-6 mb-3">
             <div className="our__services__items">
               <CircleWavyCheck color="#2BD0C9" size={32} />
 
@@ -57,7 +57,7 @@ export function Services() {
             </div>
           </div>
 
-          <div className="col-lg-3">
+          <div className="col-lg-3 col-md-6 col-sm-6 mb-3">
             <div className="our__services__items">
               <DesktopTower color="#2BD0C9" size={32} />
               <h3>Aplicativos Webs com diversas aplicações</h3>
@@ -68,7 +68,7 @@ export function Services() {
             </div>
           </div>
 
-          <div className="col-lg-3">
+          <div className="col-lg-3 col-md-6 col-sm-6 mb-3">
             <div className="our__services__items">
               <WindowsLogo color="#2BD0C9" size={32} />
 
@@ -82,7 +82,7 @@ export function Services() {
             </div>
           </div>
 
-          <div className="col-lg-3">
+          <div className="col-lg-3 col-md-6 col-sm-6 mb-3">
             <div className="our__services__items">
               <Graph color="#2BD0C9" size={32} />
 

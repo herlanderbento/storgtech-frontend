@@ -86,7 +86,7 @@ export function AboutUS() {
           </div>
         </div>
         <div className="row mt__80">
-          <div className="col-lg-4 col-md-6 col-sm-6">
+          <div className="col-lg-4 col-md-6 col-sm-6 mt-3">
             <div className="about__us__objects__items">
               <h3>
                 <Rocket color="#2BD0C9" size={42} /> Missão
@@ -97,7 +97,7 @@ export function AboutUS() {
               </p>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6 col-sm-6">
+          <div className="col-lg-4 col-md-6 col-sm-6 mt-3">
             <div className="about__us__objects__items">
               <h3>
                 <GlobeHemisphereEast color="#2BD0C9" size={42} /> Visão
@@ -109,7 +109,7 @@ export function AboutUS() {
               </p>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6 col-sm-6">
+          <div className="col-lg-4 col-md-6 col-sm-6 mt-3">
             <div className="about__us__objects__items">
               <h3>
                 <CircleWavyCheck color="#2BD0C9" size={42} /> Valores

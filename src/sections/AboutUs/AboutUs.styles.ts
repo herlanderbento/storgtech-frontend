@@ -65,14 +65,12 @@ export const AboutUsSection = styled.section`
 
       @media screen and (max-width: 480px) {
         font-size: 1.75rem;
+        line-height: 48px;
+        margin-bottom: 2rem;
       }
 
       @media screen and (max-width: 390px) {
         font-size: 1.5rem;
-      }
-
-      @media screen and (max-width: 360px) {
-        font-size: 1rem;
       }
 
       color: ${(props) => props.theme['dark-default']};

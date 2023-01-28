@@ -18,10 +18,10 @@ export const ProjectsSection = styled.section`
     height: 115vh;
   }
 
-  /* @media screen and (max-width: 600px) {
-    height: 110vh;
+  @media screen and (max-width: 360px) {
+    height: 100vh;
   }
- */
+
   @media screen and (min-width: 1440px) {
     .mt__60 {
       margin-top: 60px;

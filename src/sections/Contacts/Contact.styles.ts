@@ -85,7 +85,7 @@ export const ContactsSection = styled.section`
 
     box-shadow: 0px 50px 50px -30px rgb(148 165 143 / 27%);
 
-    margin-top: -10rem;
+    margin-top: -8rem;
 
     .form-control {
       border-radius: 0;

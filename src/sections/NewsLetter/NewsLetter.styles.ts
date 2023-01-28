@@ -31,6 +31,27 @@ export const NewsletterSection = styled.section`
     font-weight: 400;
     line-height: 58px;
 
+    @media screen and (max-width: 992px) {
+      br {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 760px) {
+      font-size: 2rem;
+      padding: 0 !important;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 1.75rem;
+      line-height: 48px;
+      margin-bottom: 2rem;
+    }
+
+    @media screen and (max-width: 390px) {
+      font-size: 1.5rem;
+    }
+
     color: ${(props) => props.theme['dark-default']};
   }
 

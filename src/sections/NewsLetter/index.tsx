@@ -31,7 +31,7 @@ export function NewsLetter() {
         <div className="row align-items-stretch mt__25">
           {images.map(function (content, key) {
             return (
-              <div key={key} className="col-lg-4">
+              <div key={key} className="col-lg-4 col-md-6 col-sm-6 mb-4">
                 <div className="newsletter__section__items">
                   <img src={content} alt="" className="img-fluid" />
 

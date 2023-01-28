@@ -16,6 +16,31 @@ export function Projects() {
     slidesToShow: 5,
     speed: 2000,
     autoplay: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 760,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   }
 
   const images = [
@@ -33,7 +58,7 @@ export function Projects() {
     <ProjectsSection ref={projectsRef} id="projects__section">
       <div className="container">
         <div className="row justify-content-between align-items-center">
-          <div className="col-lg-10">
+          <div className="col-lg-10 col-md-12 col-sm-12">
             <div className="projects__section__left">
               <h3 className="projects__title">04 • Nossos Projectos</h3>
               <h2 className="projects__subtitle">
@@ -43,7 +68,7 @@ export function Projects() {
           </div>
         </div>
 
-        <Slider className="mt__60" {...settings}>
+        <Slider className="mt__60 center" {...settings}>
           {images.map(function (images, key) {
             return (
               <div key={key} className="project__content__items">

@@ -14,6 +14,14 @@ export const ProjectsSection = styled.section`
     height: 130vh;
   }
 
+  @media screen and (max-width: 760px) {
+    height: 115vh;
+  }
+
+  @media screen and (max-width: 600px) {
+    height: 100vh;
+  }
+
   @media screen and (min-width: 1440px) {
     .mt__60 {
       margin-top: 60px;
@@ -41,6 +49,27 @@ export const ProjectsSection = styled.section`
     font-weight: 400;
     line-height: 58px;
 
+    @media screen and (max-width: 992px) {
+      br {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 760px) {
+      font-size: 2rem;
+      padding: 0 !important;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 1.75rem;
+      line-height: 48px;
+      margin-bottom: 2rem;
+    }
+
+    @media screen and (max-width: 390px) {
+      font-size: 1.5rem;
+    }
+
     color: ${(props) => props.theme['white-default']};
   }
 
@@ -57,10 +86,18 @@ export const ProjectsSection = styled.section`
   .slick-track {
     display: flex;
     gap: 1rem;
+
+    @media screen and (max-width: 992px) {
+      padding-top: 1rem !important;
+    }
   }
 
   .slick-slide:nth-child(2n) {
     padding-top: 3.125rem !important;
+
+    @media screen and (max-width: 760px) {
+      padding-top: 0 !important;
+    }
   }
 
   .project__content__items {

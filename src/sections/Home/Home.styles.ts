@@ -10,6 +10,10 @@ export const HomeSection = styled.section`
     padding-top: 8rem;
   }
 
+  @media screen and (max-width: 760px) {
+    padding-top: 6rem;
+  }
+
   background-color: ${(props) => props.theme['white-default']};
 
   align-items: flex-start !important;
@@ -43,6 +47,10 @@ export const HomeSection = styled.section`
 
       @media screen and (max-width: 480px) {
         font-size: 2rem;
+      }
+
+      @media screen and (max-width: 390px) {
+        font-size: 1.75rem;
       }
 
       @media screen and (max-width: 360px) {

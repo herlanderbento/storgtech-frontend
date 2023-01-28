@@ -28,7 +28,7 @@ export const HomeSection = styled.section`
     padding-top: 3rem;
   }
 
-  @media (max-width: 990px) {
+  @media (max-width: 992px) {
     .home__bottom {
       display: none;
     }
@@ -40,7 +40,7 @@ export const HomeSection = styled.section`
       font-size: 2.875rem;
       font-family: 'Mochiy Pop One', sans-serif;
 
-      @media screen and (max-width: 640px) {
+      @media screen and (max-width: 760px) {
         font-size: 2.5rem;
         padding: 0 !important;
       }

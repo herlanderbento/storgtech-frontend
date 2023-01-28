@@ -19,6 +19,10 @@ export const AboutUsSection = styled.section`
   .about__us__section__right {
     padding: 1rem;
     z-index: 200;
+
+    @media screen and (max-width: 575px) {
+      padding: 0.25rem;
+    }
   }
 
   .about__us__section__left {
@@ -38,6 +42,10 @@ export const AboutUsSection = styled.section`
     .about__us__title {
       padding-top: 4.75rem;
 
+      @media screen and (max-width: 760px) {
+        padding-top: 3rem;
+      }
+
       font-size: 1.25rem;
       font-weight: 700;
 
@@ -49,6 +57,23 @@ export const AboutUsSection = styled.section`
       font-family: 'Mochiy Pop One';
       font-weight: 400;
       line-height: 58px;
+
+      @media screen and (max-width: 760px) {
+        font-size: 2rem;
+        padding: 0 !important;
+      }
+
+      @media screen and (max-width: 480px) {
+        font-size: 1.75rem;
+      }
+
+      @media screen and (max-width: 390px) {
+        font-size: 1.5rem;
+      }
+
+      @media screen and (max-width: 360px) {
+        font-size: 1rem;
+      }
 
       color: ${(props) => props.theme['dark-default']};
     }
@@ -82,6 +107,10 @@ export const AboutUsSection = styled.section`
       height: 560px;
 
       border-radius: 0.25rem;
+
+      @media screen and (max-width: 991px) {
+        display: none;
+      }
     }
 
     .about__us__single__Wrapper__01 {

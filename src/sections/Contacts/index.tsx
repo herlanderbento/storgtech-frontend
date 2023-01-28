@@ -26,7 +26,7 @@ export function Contacts() {
         <div className="row justify-content-center">
           <div className="col-lg-12">
             <div className="contacts__section__items">
-              <div className="col-lg-7">
+              <div className="col-lg-7 col-sm-11">
                 <div className="contacts__header">
                   <h3 className="contacts__title">07 • Contacta-nos</h3>
 
@@ -35,56 +35,55 @@ export function Contacts() {
                   </h2>
                 </div>
               </div>
-
-              <div className="col-lg-7">
-                <div className="form__contacts">
-                  <form onSubmit={handleSubmit}>
-                    <div className="form-group">
+            </div>
+          </div>
+          <div className="col-lg-7 col-sm-11">
+            <div className="form__contacts">
+              <form onSubmit={handleSubmit}>
+                {/* <div className="form-group">
                       <input
                         type="name"
                         className="form-control"
                         placeholder="Seu Nome"
                       />
-                    </div>
-                    <div className="form-group">
-                      <input
-                        type="email"
-                        className="form-control"
-                        placeholder="Seu Email"
-                      />
-                    </div>
-                    <div className="form-group">
-                      <textarea
-                        className="form-control"
-                        placeholder="Sua mensagem
-                        "
-                        rows={3}
-                      ></textarea>
-                    </div>
-                    <div className="form-group">
-                      <button
-                        onClick={handleClick}
-                        className={
-                          isSending || isSent
-                            ? 'btn__send__message sending'
-                            : 'btn__send__message'
-                        }
-                      >
-                        <span className="icon material-symbols-outlined">
-                          {isSent ? 'check' : 'send'}
-                        </span>
-                        <span className="text">
-                          {isSending
-                            ? 'Enviando ...'
-                            : isSent
-                            ? 'Enviado'
-                            : 'Enviar mensagem'}
-                        </span>
-                      </button>
-                    </div>
-                  </form>
+                    </div> */}
+                <div className="form-group">
+                  <input
+                    type="email"
+                    className="form-control"
+                    placeholder="Seu Email"
+                  />
                 </div>
-              </div>
+                <div className="form-group">
+                  <textarea
+                    className="form-control"
+                    placeholder="Sua mensagem
+                        "
+                    rows={3}
+                  ></textarea>
+                </div>
+                <div className="form-group">
+                  <button
+                    onClick={handleClick}
+                    className={
+                      isSending || isSent
+                        ? 'btn__send__message sending'
+                        : 'btn__send__message'
+                    }
+                  >
+                    <span className="icon material-symbols-outlined">
+                      {isSent ? 'check' : 'send'}
+                    </span>
+                    <span className="text">
+                      {isSending
+                        ? 'Enviando ...'
+                        : isSent
+                        ? 'Enviado'
+                        : 'Enviar mensagem'}
+                    </span>
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>

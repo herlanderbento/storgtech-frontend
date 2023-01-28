@@ -4,13 +4,24 @@ export const ContactsSection = styled.section`
   background-color: ${(props) => props.theme['white-default']};
   padding: 80px 15px;
 
-  margin-bottom: 4rem;
+  @media screen and (max-width: 600px) {
+    .container {
+      padding: 0;
+      .col-lg-12 {
+        padding: 0;
+      }
+    }
+  }
+
+  width: 100%;
+  height: 100% !important;
 
   .contacts__section__items {
     background-color: ${(props) => props.theme['blue-700']};
+    width: 100%;
 
     padding: 1rem;
-    height: 80vh;
+    height: 60vh;
 
     display: flex;
     flex-direction: column;
@@ -33,6 +44,27 @@ export const ContactsSection = styled.section`
     font-weight: 400;
     line-height: 58px;
 
+    @media screen and (max-width: 992px) {
+      br {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 760px) {
+      font-size: 2rem;
+      padding: 0 !important;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 1.75rem;
+      line-height: 48px;
+      margin-bottom: 2rem;
+    }
+
+    @media screen and (max-width: 390px) {
+      font-size: 1.5rem;
+    }
+
     color: ${(props) => props.theme['white-default']};
   }
 
@@ -52,6 +84,10 @@ export const ContactsSection = styled.section`
     padding: 1.875rem;
 
     box-shadow: 0px 50px 50px -30px rgb(148 165 143 / 27%);
+
+    @media screen and (max-width: 600px) {
+      margin-top: -10rem;
+    }
 
     .form-control {
       border-radius: 0;

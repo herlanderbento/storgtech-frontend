@@ -90,8 +90,11 @@ export const Navbar = styled(NavbarReactstrap)`
 
   .navbar-brand img {
     width: 240px;
-
     cursor: pointer;
+
+    @media screen and (max-width: 320px) {
+      width: 200px;
+    }
   }
 
   .hamburger {

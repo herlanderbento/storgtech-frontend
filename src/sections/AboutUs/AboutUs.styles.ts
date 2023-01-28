@@ -5,13 +5,13 @@ export const AboutUsSection = styled.section`
   width: 100%;
   clear: both;
 
-  @media screen and (min-width: 1280px) {
+  /* @media screen and (min-width: 1280px) {
     height: 130vh;
   }
 
   @media screen and (min-width: 1440px) {
     height: 120vh;
-  }
+  } */
 
   position: relative;
 

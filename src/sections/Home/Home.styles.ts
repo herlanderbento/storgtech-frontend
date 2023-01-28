@@ -2,13 +2,13 @@ import styled from 'styled-components'
 
 export const HomeSection = styled.section`
   width: 100%;
-  min-height: 120vh;
-
-  @media screen and (min-width: 1280px) {
-    height: 140vh;
-  }
+  height: 999.6px;
 
   padding-top: 12rem;
+
+  @media screen and (max-width: 992px) {
+    padding-top: 8rem;
+  }
 
   background-color: ${(props) => props.theme['white-default']};
 
@@ -17,16 +17,37 @@ export const HomeSection = styled.section`
   .home__section__left,
   .home__section__right {
     position: relative;
+    padding: 1rem;
   }
 
   .pt__86 {
-    padding-top: 5.375rem;
+    padding-top: 3rem;
+  }
+
+  @media (max-width: 990px) {
+    .home__bottom {
+      display: none;
+    }
+    height: 100% !important;
   }
 
   .home__section__left {
     h1 {
       font-size: 2.875rem;
       font-family: 'Mochiy Pop One', sans-serif;
+
+      @media screen and (max-width: 640px) {
+        font-size: 2.5rem;
+        padding: 0 !important;
+      }
+
+      @media screen and (max-width: 480px) {
+        font-size: 2rem;
+      }
+
+      @media screen and (max-width: 360px) {
+        font-size: 1.625rem;
+      }
 
       color: ${(props) => props.theme['dark-default']};
       line-height: 1.5;
@@ -43,6 +64,10 @@ export const HomeSection = styled.section`
       @media screen and (min-width: 1440px) {
         padding-left: 14rem;
       }
+
+      @media screen and (max-width: 992px) {
+        padding-bottom: 1.5rem;
+      }
     }
 
     img {
@@ -57,6 +82,23 @@ export const HomeSection = styled.section`
 
       @media screen and (min-width: 1440px) {
         width: 62.5rem;
+      }
+
+      @media screen and (max-width: 1200px) {
+        position: relative;
+        width: 56rem;
+        margin-left: -5rem !important;
+      }
+
+      @media screen and (max-width: 1199px) {
+        position: relative;
+        width: 50rem !important;
+        height: 100%;
+      }
+
+      @media screen and (max-width: 991px) {
+        position: relative;
+        width: 100% !important;
       }
     }
 
@@ -78,6 +120,10 @@ export const HomeSection = styled.section`
       z-index: 10;
 
       background-color: ${(props) => props.theme['green-500']};
+
+      @media screen and (max-width: 992px) {
+        display: none;
+      }
     }
   }
 
@@ -95,7 +141,6 @@ export const HomeSection = styled.section`
     &__items {
       padding: 1rem 0;
       margin-left: 1.5rem;
-
       border-bottom: 1px solid ${(props) => props.theme['gray-100']};
 
       &:last-child {
@@ -104,6 +149,10 @@ export const HomeSection = styled.section`
 
       @media screen and (min-width: 1440px) {
         margin-left: 4.25rem;
+      }
+
+      @media screen and (max-width: 991px) {
+        margin-top: 1rem !important;
       }
 
       h4 {

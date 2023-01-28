@@ -14,9 +14,10 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body{
-        background: ${(props) => props.theme['white-default']};
+        /* background: ${(props) => props.theme['white-default']}; */
         color: ${(props) => props.theme['dark-default']} !important;
         --webkit-font-smoothing: antialiased;
+        height: 100vh !important;
     }
 
     body, input, textarea, button{
@@ -24,6 +25,7 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 400;
         font-size: 1rem;
     }
+    
 
     ul{
         list-style-type: none;

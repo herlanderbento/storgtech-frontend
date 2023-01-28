@@ -1,9 +1,10 @@
 import { Button } from '../../components/Button'
 import { useNav } from '../../hooks/useNav'
 
-import { ArrowDown, ArrowRight } from 'phosphor-react'
+import { ArrowRight } from 'phosphor-react'
 import { HomeSection } from './Home.styles'
 import { handleClickSmoothScrolling } from '../../utils'
+import React from 'react'
 
 export function Home() {
   const homeRef = useNav('home')
@@ -40,12 +41,6 @@ export function Home() {
               <h1>
                 Nós criamos <span>soluções integradas</span> únicas & eficientes
               </h1>
-              <button
-                className="ellipse__btn"
-                onClick={() => handleClickSmoothScrolling('about__us')}
-              >
-                <ArrowDown color="#FFFFFF" size={40} />
-              </button>
             </div>
           </div>
           <div className="col-lg-4">
@@ -65,23 +60,29 @@ export function Home() {
             </div>
           </div>
         </div>
-        <div className="row pt__86">
-          <div className="col-lg-8">
-            <div className="home__section__left">
-              <img src="/images/background-hero.png" alt="" />
+        <div className="home__bottom">
+          <div className="row pt__86">
+            <div className="col-lg-8 col-md-12 col-sm-12">
+              <div className="home__section__left">
+                <img src="/images/background-hero.png" alt="" />
+              </div>
             </div>
-          </div>
-          <div className="col-lg-4">
-            <div className="home__section__right">
-              {infoSectionRightItens.map(({ amount, symbol, title }) => (
-                <div key={amount} className="home__section__right__items">
-                  <h4>
-                    {amount}
-                    <span>{symbol}</span>
-                  </h4>
-                  <p>{title}</p>
-                </div>
-              ))}
+            <div className="col-lg-4 col-md-12">
+              <div className="home__section__right row">
+                {React.Children.toArray(
+                  infoSectionRightItens.map(({ amount, symbol, title }) => (
+                    <div className="col-sm-6 col-lg-12">
+                      <div className="home__section__right__items">
+                        <h4>
+                          {amount}
+                          <span>{symbol}</span>
+                        </h4>
+                        <p>{title}</p>
+                      </div>
+                    </div>
+                  )),
+                )}
+              </div>
             </div>
           </div>
         </div>

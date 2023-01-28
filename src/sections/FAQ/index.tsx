@@ -26,12 +26,12 @@ const allFAQDatas = [
 export function FAQ() {
   const faqRef = useNav('faq')
 
-  const arrayInfo = [
-    'What is StorgTech?',
-    'What sector does the company operate in?',
-    'What is its target audience?',
-    'Does the company have a slogan? What is it?',
-  ]
+  // const arrayInfo = [
+  //   'What is StorgTech?',
+  //   'What sector does the company operate in?',
+  //   'What is its target audience?',
+  //   'Does the company have a slogan? What is it?',
+  // ]
 
   return (
     <FAQSection ref={faqRef} id="faq__section">

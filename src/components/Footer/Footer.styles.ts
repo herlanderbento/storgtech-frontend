@@ -37,9 +37,9 @@ export const FooterContainer = styled.footer`
 
     .nav__list {
       padding: 0.5rem 0 !important;
-
       display: flex;
       align-items: center !important;
+
       gap: 2rem;
 
       .nav-item {
@@ -95,6 +95,11 @@ export const FooterContainer = styled.footer`
       display: flex;
       justify-content: flex-end;
       gap: 1rem;
+
+      @media screen and (max-width: 760px) {
+        gap: 2rem;
+        justify-content: center;
+      }
 
       padding: 0.5rem 0;
 

@@ -56,7 +56,7 @@ export function Footer() {
     <FooterContainer>
       <div className="container">
         <div className="row justify-content-between align-items-center">
-          <div className="col-lg-3">
+          <div className="col-lg-3 mb-3">
             <div className="footer__logo">
               <img
                 src="/images/logo.png"

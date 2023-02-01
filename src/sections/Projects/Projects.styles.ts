@@ -18,9 +18,13 @@ export const ProjectsSection = styled.section`
     height: 115vh;
   }
 
-  @media screen and (max-width: 360px) {
-    height: 100vh;
+  @media screen and (max-width: 480px) {
+    height: 90vh;
   }
+  /* 
+  @media screen and (max-width: 375px) {
+    height: 100vh;
+  } */
 
   @media screen and (min-width: 1440px) {
     .mt__60 {
